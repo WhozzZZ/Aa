@@ -11,12 +11,6 @@ app.use(express.json());
 
 const db = new sqlite3.Database('./data.db');
 
-git init
-git remote add origin https://github.com/WhozzZZ/Aa.git
-git add .
-git commit -m "Premier commit"
-git push -u origin master
-
 // --- DB INIT ---
 db.serialize(() => {
   db.run(`CREATE TABLE IF NOT EXISTS objets (
